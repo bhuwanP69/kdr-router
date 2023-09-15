@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    /* body */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background:#ffffff;
+    color:#333;
+      font-family: 'Muli', sans-serif;
+      height: 100vh;
+      overflow-x: hidden;
+      margin: 0;
+    }
+
+    
+    /* header  */
+    .header{
+        width:100%;
+    }
+     @media (min-width: 1024px) {
+        .left{
+          width:40vw;
+        }
+    }
+
+   .kdr-logo:hover .home{
+    opacity: 1;
+   }
+
+  
+    .about-first,.here{
+        width: 510px;
+    }
+    .members{
+        width: 1000px;
+    }
+     /* dark mode  */
+     .dark-mode:hover .ab-sun{
+      display: block;
+     }
+     .root-layout{
+      background:white;
+    }
+
+    .root-layout.dark{
+    background:#232529;
+    color: white;
+    }
+    .root-layout .header{
+      background-color: white;
+    }
+    .root-layout.dark .header{
+      background:#232529;
+     
+    }
+    .root-layout.dark .Contact, .root-layout.dark .back-to-top {
+      background: white;
+      color: black;
+    }
+    .root-layout.dark .fa-circle-pause ,.root-layout.dark .fa-circle-play, .root-layout.dark .solid-circle,  .root-layout.dark .regular-circle{
+      color: white;
+    }
+
+
+  
+
+    .message{
+        width: 500px;
+    }
+    .footer{
+        background: black;
+        width:100vw;
+    }
+   
+    .back-to-top.visible {
+        right: 6px;
+        opacity: 1;
+
+      }
+      .head-office:hover .add-absolute{
+        opacity: 1;
+      }
+  .relative-btn:hover .absolute-btn{
+    opacity: 1;
+  }
+  /* our team */
+  .team-one.show .more-info{
+    display: block;
+  }
+  
+  .fa-bars{
+    display: none !important;
+  }
+  @media (max-width:1024px) {
+    .fa-bars{
+        display:block !important;
+    }
+    
+  }
+}
