@@ -115,7 +115,7 @@ const handleImageMouseLeave = () => {
             </div>
 
               {/* bouncy mouse  */}
-            <div className="bounce hidden md:flex  animate-bounce items-center ">
+            {/* <div className="bounce hidden md:flex  animate-bounce items-center ">
               <div className="mouse text-3xl">
             <iconify-icon icon="clarity:mouse-solid"></iconify-icon>
               </div>
@@ -124,7 +124,7 @@ const handleImageMouseLeave = () => {
               <iconify-icon icon="mdi:arrow-down-thin"></iconify-icon>
               </div>
               
-            </div>
+            </div> */}
         </main>
      );
 }
