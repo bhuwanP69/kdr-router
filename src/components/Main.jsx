@@ -69,7 +69,7 @@ const handleImageMouseLeave = () => {
 };
     
     return ( 
-        <main className=" main pt-10 w-screen  relative mt-10 md:mt-0   grid gap-5  grid-cols-1 md:grid-cols-2 ml-12 mr-14 pr-5 justify-center items-center" id="main">
+        <main className=" main pt-5 pb-10 sm:pb-36 md:pb-20 w-screen   relative mt-10 md:mt-0   grid gap-5  grid-cols-1 md:grid-cols-2 pl-12  pr-5 justify-center items-center" id="main">
           
             <div className="m-left mr-10 ">
               
@@ -96,7 +96,7 @@ const handleImageMouseLeave = () => {
                  className=" flex transform transition-all ease-in-out duration-500  rounded-3xl " />
              
 
-                <div className="buttons absolute md:-bottom-1 -left-16 sm:left-14  lg:left-0 md:-left-14 lg:-bottom-24 flex justify-between items-center w-56 mt-8 ml-32">
+                <div className="buttons absolute md:-bottom-1 -left-16 sm:left-14  lg:left-0 md:-left-14 lg:-bottom-14 flex justify-between items-center w-56 mt-8 ml-32">
 
                 <i className="fa-solid fa-chevron-left sm:text-2xl text-xl  cursor-pointer hover:scale-125 duration-500 bg-blue-100 p-1 rounded-full" onClick={handleLeftClick}></i>
               
