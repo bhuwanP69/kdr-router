@@ -54,7 +54,7 @@ const renderCircles = () => {
     >
       <FontAwesomeIcon
         icon={index === activeSlide ? faCircleSolid : faCircleRegular}
-        className={index === activeSlide ? 'solid-circle text-xl' : 'regular-circle text-xl'}
+        className={index === activeSlide ? 'solid-circle text-sm' : 'regular-circle text-sm'}
       />
     </div>
   ));
@@ -98,18 +98,18 @@ const handleImageMouseLeave = () => {
 
                 <div className="buttons absolute md:-bottom-1 -left-16 sm:left-14  lg:left-0 md:-left-14 lg:-bottom-14 flex justify-between items-center w-56 mt-8 ml-32">
 
-                <i className="fa-solid fa-chevron-left sm:text-2xl text-xl  cursor-pointer hover:scale-125 duration-500 bg-blue-100 p-1 rounded-full" onClick={handleLeftClick}></i>
+                <i className="fa-solid fa-chevron-left sm:text-2xl text-xl  cursor-pointer hover:scale-110 duration-500 bg-blue-100 p-1 rounded-full" onClick={handleLeftClick}></i>
               
                 {isPlaying ? (
-                <i class={`fa-solid fa-circle-pause text-2xl sm:text-3xl hover:scale-105 cursor-pointer transition-all`}   onClick={handlePauseClick}></i>
+                <i class={`fa-solid fa-circle-pause text-2xl sm:text-3xl hover:scale-105 cursor-pointer transition-all pt-1`}   onClick={handlePauseClick}></i>
                  ) : (
-                 <i class="fa-solid fa-circle-play text-2xl sm:text-3xl hover:scale-105 cursor-pointer transition-all" onClick={handlePlayClick}></i>
+                 <i class="fa-solid fa-circle-play text-2xl sm:text-3xl hover:scale-105 cursor-pointer transition-all pt-1" onClick={handlePlayClick}></i>
                    )}
                           
                     <div className="circle-container flex">
                     {renderCircles()}
                   </div>
-                     <i className="fa-solid fa-chevron-right sm:text-2xl text-xl cursor-pointer hover:scale-125 duration-500 bg-blue-100 p-1 rounded-full" onClick={handleRightClick}></i>
+                     <i className="fa-solid fa-chevron-right sm:text-2xl text-xl cursor-pointer hover:scale-110 duration-500 bg-blue-100 p-1 rounded-full" onClick={handleRightClick}></i>
                 </div>
 
             </div>
