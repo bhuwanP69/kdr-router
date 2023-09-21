@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import { Link } from 'react-scroll';
 
 const Header = ({ isDarkMode }) => {
   return (

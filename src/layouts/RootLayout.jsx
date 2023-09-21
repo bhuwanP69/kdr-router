@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import BackToTop from "../components/BackToTop";
 import Header from "../components/Header";
 
+
 import { NavLink, Outlet } from "react-router-dom";
-import { Link } from 'react-scroll';
 
 
   // dark mode 

@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
+const darkLogo = 'https://live.staticflickr.com/65535/53136330799_977780411f_n.jpg';
+const whiteLogo = 'https://live.staticflickr.com/65535/53105784717_517e98b50f_n.jpg';
 
-const TeamMember1 = () => {
+const TeamMember1 = ({ isDarkMode }) => {
     // State to manage the visibility of more-info section
     const [showMoreInfo, setShowMoreInfo] = useState(false);
 
@@ -33,7 +35,21 @@ const TeamMember1 = () => {
     return (
             <div className="members  mt-5">
                 <div className="team-one relative grid justify-start sm:ml-0 ml-36   sm:flex sm:flex-col  sm:justify-center sm:items-center cursor-pointer">
-                    <img src="../Images/team member.webp" alt="photo" className="rounded-full w-20 ml-10 sm:ml-0" />
+
+          {isDarkMode ? (
+            <img
+              src={darkLogo}
+              alt="dark logo"
+              className=" lg:mr-2 cursor-pointer rounded-full w-20 ml-10 sm:ml-0"
+            />
+          ) : (
+            <img
+              src={whiteLogo}
+              alt="light logo"
+              className=" lg:mr-2 cursor-pointer rounded-full w-20 ml-10 sm:ml-0"
+            />
+          )}
+                    {/* <img src={} alt="photo" className="rounded-full w-20 ml-10 sm:ml-0" /> */}
                     <button onClick={handleButtonClick}>
                         <h5 className="text-semibold text-3xl font-semibold hover:drop-shadow-xl hover:scale-105 duration-1000"> CA Pawan Bhusal</h5>
                     </button>
